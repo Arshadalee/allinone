@@ -1,8 +1,6 @@
-# Getting Started with Create React App
+# Hi Welcome to my repo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+in this reposiotry i have created many small project in one react application.
 
 In the project directory, you can run:
 
