@@ -42,18 +42,13 @@ const Accordian = () => {
                   <h3>{mapItem.question}</h3>
                   <span>➕</span>
                 </div>
-                {
-                  multiSelection ? multiple.indexOf(mapItem.id)!== -1  && (
-                  <div className="content">{mapItem.answer}</div>):
-                 ( selected === mapItem.id && <div className="acc-content ">{mapItem.answer}</div>
-                  )
-
-
-                }
-                {selected === mapItem.id ||
-                multiple.indexOf(mapItem.id) !== -1 ? (
-                  <div className="content">{mapItem.answer}</div>
-                ) : null}
+                {multiSelection
+                  ? multiple.indexOf(mapItem.id) !== -1 && (
+                      <div className="content">{mapItem.answer}</div>
+                    )
+                  : selected === mapItem.id && (
+                      <div className="acc-content ">{mapItem.answer}</div>
+                    )}
               </div>
             </div>
           ))
