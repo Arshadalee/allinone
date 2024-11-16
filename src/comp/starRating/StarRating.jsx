@@ -29,7 +29,7 @@ const StarRating = ({nuMStars=7}) => {
             className={index <=(hover || rating) ? "active":"inactive"}
             onClick={()=>handleClick(index)}
             onMouseMove={()=>handleMouseEnter(index)}
-            onMouseLeav={()=>handleMouseLeave()}
+            onMouseLeave={()=>handleMouseLeave()}
             size={40}/>);
         })
       }

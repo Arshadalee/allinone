@@ -42,44 +42,44 @@ const Slider = ({ url, limit = 5, page = 1 }) => {
 
   return (
     <center><div className="container">
-    <BsArrowLeftCircleFill
-      onClick={handlePrevious}
-      className="arrow arrow-left"
-    />
-    {images && images.length
-      ? images.map((item, index) => (
-          <img
-            key={item.id}
-            alt={item.download_url}
-            src={item.download_url}
-            className={
-              currentSlide === index
-                ? "current-image"
-                : "current-image hide-current-image"
-            }
-          />
-        ))
-      : null}
-    <BsArrowRightCircleFill
-      onClick={handleNext}
-      className="arrow arrow-right"
-    />
-    <span className="circle-indicators">
+      <BsArrowLeftCircleFill
+        onClick={handlePrevious}
+        className="arrow arrow-left"
+      />
       {images && images.length
-        ? images.map((_, index) => (
-            <button
-              key={index}
+        ? images.map((item, index) => (
+            <img
+              key={item.id}
+              alt={item.download_url}
+              src={item.download_url}
               className={
                 currentSlide === index
-                  ? "current-indicator"
-                  : "current-indicator inactive-indicator"
+                  ? "current-image"
+                  : "current-image hide-current-image"
               }
-              onClick={() => setCurrentSlide(index)}
-            ></button>
+            />
           ))
         : null}
-    </span>
-  </div></center>
+      <BsArrowRightCircleFill
+        onClick={handleNext}
+        className="arrow arrow-right"
+      />
+      <span className="circle-indicators">
+        {images && images.length
+          ? images.map((_, index) => (
+              <button
+                key={index}
+                className={
+                  currentSlide === index
+                    ? "current-indicator"
+                    : "current-indicator inactive-indicator"
+                }
+                onClick={() => setCurrentSlide(index)}
+              ></button>
+            ))
+          : null}
+      </span>
+    </div></center>
   );
 };
 
