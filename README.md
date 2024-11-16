@@ -1,8 +1,8 @@
 # Hi Welcome to my repo
 
 in this reposiotry i have created many small project in one react application.
+added new project
 
-In the project directory, you can run:
 
 ### `npm start`
 
