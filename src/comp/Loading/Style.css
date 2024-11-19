@@ -1,3 +1,6 @@
+#body{
+    background-color: gray;
+}
 .load-more-container {
     display:  flex;
     flex-direction: column;
