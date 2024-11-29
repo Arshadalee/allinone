@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import  "./Style.css";
 
 const Poptest = () => {
 
@@ -7,6 +8,9 @@ const Poptest = () => {
     function handlepop(){
        setPopup(!popup);
     }
+    function onClose(){
+      setPopup(false);
+    }
 
   return (
    <center>
@@ -14,7 +18,13 @@ const Poptest = () => {
     
     <button onClick={handlepop}>pop up</button>
     {
-        popup && <Poptest/>
+        popup && <Poptest
+          id={"custom-id"}
+          header={<h1>Customized Header</h1>}
+          footer={<h1>Customized Footer</h1>}
+          onClose={onClose}
+          body={<div>Customized body</div>}
+        />
     }
 
 

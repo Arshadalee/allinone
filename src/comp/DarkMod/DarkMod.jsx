@@ -4,6 +4,7 @@ import  "./Style.css";
 
 
 function DarkMod() {
+
     const[theme,setTheme]=useLocalStorage('theme','dark')
 
     function handleTheme(){
