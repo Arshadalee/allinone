@@ -9,12 +9,15 @@ import QrCode from "./comp/QR code/QrCode";
 import ScrolIingIndicator from "./comp/Scroll_indicator/ScrolIingIndicator";
 import TabTest from "./comp/Tabs/Tabtest";
 import Poptest from "./comp/CustomPopUp/Poptest";
+import GithubProfile from "./comp/githubProfileFinder/GithubProfile";
+import User from "./comp/githubProfileFinder/User";
 
 function App() {
   return (
     <div className="App">
       <h2>Hello this is my new project</h2>
       <DarkMod/>
+      <GithubProfile/>
       <QrCode/>
       <Accordian />
       <TabTest/>
@@ -23,6 +26,7 @@ function App() {
       <ScrolIingIndicator/>
       <Slider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} />
       <LoadMore/>
+
     </div>
   );
 }
