@@ -11,6 +11,7 @@ import TabTest from "./comp/Tabs/Tabtest";
 import Poptest from "./comp/CustomPopUp/Poptest";
 import GithubProfile from "./comp/githubProfileFinder/GithubProfile";
 import User from "./comp/githubProfileFinder/User";
+import TestWindowResize from "./comp/use_window/TestWindowResize";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DarkMod/>
       <GithubProfile/>
       <QrCode/>
+      <TestWindowResize/>
       <Accordian />
       <TabTest/>
       <Poptest/>
