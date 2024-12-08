@@ -12,6 +12,7 @@ import Poptest from "./comp/CustomPopUp/Poptest";
 import GithubProfile from "./comp/githubProfileFinder/GithubProfile";
 import User from "./comp/githubProfileFinder/User";
 import TestWindowResize from "./comp/use_window/TestWindowResize";
+import ScrollTopbottom from "./comp/scrollTopBottom/ScrollTopbottom";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <DarkMod/>
       <GithubProfile/>
       <QrCode/>
+      <ScrollTopbottom/>
       <TestWindowResize/>
       <Accordian />
       <TabTest/>
@@ -27,6 +29,8 @@ function App() {
       <StarRating />
       <ScrolIingIndicator/>
       <Slider url={"https://picsum.photos/v2/list"} page={"1"} limit={"10"} />
+      
+
       <LoadMore/>
 
     </div>
