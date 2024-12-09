@@ -13,6 +13,7 @@ import GithubProfile from "./comp/githubProfileFinder/GithubProfile";
 import User from "./comp/githubProfileFinder/User";
 import TestWindowResize from "./comp/use_window/TestWindowResize";
 import ScrollTopbottom from "./comp/scrollTopBottom/ScrollTopbottom";
+import ScrolltoSection from "./comp/scrollTopBottom/ScrolltoSection";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <GithubProfile/>
       <QrCode/>
       <ScrollTopbottom/>
+      <ScrolltoSection/>
       <TestWindowResize/>
       <Accordian />
       <TabTest/>
