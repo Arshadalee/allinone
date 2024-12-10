@@ -14,6 +14,7 @@ import User from "./comp/githubProfileFinder/User";
 import TestWindowResize from "./comp/use_window/TestWindowResize";
 import ScrollTopbottom from "./comp/scrollTopBottom/ScrollTopbottom";
 import ScrolltoSection from "./comp/scrollTopBottom/ScrolltoSection";
+import UseOutside from "./comp/useOutsideClick/UseOutside";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <h2>Hello this is my new project</h2>
       <DarkMod/>
       <GithubProfile/>
+      <UseOutside/>
       <QrCode/>
       <ScrollTopbottom/>
       <ScrolltoSection/>
