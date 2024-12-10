@@ -1,0 +1,12 @@
+
+  
+  .container-box {
+    padding: 50px 100px;
+    height: 200px;
+    width: 300px;
+    overflow: auto;
+    background-color: rgb(138, 145, 153);
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 40px;
+    margin: 100px 100px ;
+  }
