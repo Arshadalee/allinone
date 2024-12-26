@@ -24,7 +24,7 @@ function App() {
       <GithubProfile/>
       <UseOutside/>
       <QrCode/>
-      <ScrollTopbottom/>
+     
       <ScrolltoSection/>
       <TestWindowResize/>
       <Accordian />
@@ -36,6 +36,7 @@ function App() {
       
 
       <LoadMore/>
+      <ScrollTopbottom/>
 
     </div>
   );
